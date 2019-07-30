@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.boton_arriba {
+    position: fixed;
+    top: 1%;
+    left: 49%;
+}
+
+.boton_abajo {
+    padding-bottom: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    left: 48%;
+}
+
+.boton_abajo img {
+    height: 50px;
+    width: 80px;
+}
+
+.boton_arriba img {
+    padding-top: 0.1rem;
+    height: 40px;
+    width: 40px;
+}
+
+.final {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final div {
+    text-align: center;
+}
+
+.final img {
+    max-width: 65%;
+}
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@media(min-width:100px) and (max-width:579px) {
+    .boton_arriba, .boton_abajo {
+        display: none;
+    }
+    .final {
+        padding-top: 10rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .final div {
+        text-align: center;
+    }
+    .final img {
+        max-width: 80%;
+    }
+    .moverse_abajo {
+        position: fixed;
+        bottom: 0;
+        left: 48%;
+    }
+    .moverse_arriba {
+        position: fixed;
+        top: 5px;
+        left: 48%;
+    }
+    .moverse_arriba img, .moverse_abajo img {
+        width: 20px;
+    }
+    .logo_xani img {
+        display: flex;
+        max-width: 100%;
+        margin-top: 14rem;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media(min-width: 580px) and (min-height: 600px) {
+    .logo_xani {
+        display: none !important;
+    }
+    .moverse_arriba, .moverse_abajo {
+        display: none;
+    }
+}

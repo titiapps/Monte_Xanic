@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Videos</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/menu-responsive.css" />
+    <link rel="stylesheet" media="screen" href="css/galeria.css" />
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link
+      href="./css/jquery.mb.YTPlayer.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./inc/jquery.mb.YTPlayer.js"></script>
+    <script>
+      var myPlayer;
+      jQuery(function() {
+        myPlayer = jQuery("#bgndVideo").YTPlayer();
+      });
+    </script>
+    <script src="main.js"></script>
+  </head>
+
+  <body class="animate-in">
+    <!-- Burger menu start -->
+    <header>
+      <div class="smm">
+        <div class="container">
+          <div class="smm__container js-smm-container">
+            <button
+              class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block acr2 boton_nav"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <nav class="smm__collapse">
+              <ul class="smm__primary-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li>
+                  <a href="./Monte_Xanix_y_Gran_Ricardo.html"
+                    >Acerca de Gran Ricardo</a
+                  >
+                </li>
+                <li><a href="./Puntos_y_Medallas.html">Premios</a></li>
+                <li><a href="./Gran_Ricardo.html">Gran Ricardo</a></li>
+                <li><a href="./galeria.html">Galeria De Videos</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- burger menu end -->
+    <!--<div id="bgndVideo" class="player"
+     data-property="{videoURL:'88LqRYdOnKs',containment:'body',autoPlay:true, loop: true ,mute:true, startAt:0, opacity:0.3, showControls: false}"></div> -->
+    <div class="contenidoPopUp animate-in" id="contenidoPopUp">
+      <iframe
+        id="youtube-video"
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/Hre6EXsxZxs?rel=0&controls=0&autoplay=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <button id="saltarvideo">Salir</button>
+    </div>
+
+    <div class="contenido" id="contenidoA">
+      <div class="logo">
+        <img src="./img/gran-ricardo-1994-2019.png" alt="" />
+      </div>
+
+      <div class="ricardoLogo">
+        <img src="./img/gran-ricardo-xxv-años.png" />
+      </div>
+
+      <div class="videoBar">
+        <a class="demo" id="firstVid">
+          <img src="./img/videos/miniatura-cata-1.jpg" />
+        </a>
+        <a class="demo" id="secondVid">
+          <img src="./img/videos/miniatura-cata-2.jpg" />
+        </a>
+        <a class="demo" id="thirdVid">
+          <img src="./img/videos/miniatura-cata-3.jpg" />
+        </a>
+        <a class="demo" id="fourthVid">
+          <img src="./img/videos/miniatura-familia-hojel.jpg" />
+        </a>
+      </div>
+        <div class="logo_xani">
+            <img src="./img/pagina2/gran-ricardo-logo-xanic.png" alt="" srcset="" />
+        </div>
+    </div>
+
+    <div class="navegacion">
+      <img
+        src="./img/navegacion/linea-menu-1.png"
+        id="nav_gran_ricardo_linea2"
+        alt=""
+      />
+      <a href="./inicio.html">
+        <img src="./img/navegacion/menu-granricardo.png" id="nav_gran_ricardo2"
+      /></a>
+
+      <img
+        src="./img/navegacion/linea-menu-1.png"
+        id="nav_acerca_linea"
+        class="el1"
+        alt=""
+      />
+      <a href="./Monte_Xanix_y_Gran_Ricardo.html">
+        <img
+          src="./img/navegacion/menu-acerca.png"
+          id="nav_acerca"
+          class="principal_nav el2"
+          alt=""
+        />
+      </a>
+
+      <img
+        src="./img/navegacion/linea-menu-2.png"
+        id="nav_premios_linea"
+        alt=""
+      />
+      <a href="./Puntos_y_Medallas.html">
+        <img src="./img/navegacion/premios-menu.png" id="nav_premios" />
+      </a>
+
+      <img
+        src="./img/navegacion/linea-menu-1.png"
+        id="nav_gran_ricardo_linea"
+        alt=""
+      />
+      <a href="./Gran_Ricardo.html">
+        <img src="./img/navegacion/menu-granricardo.png" id="nav_gran_ricardo"
+      /></a>
+
+      <div class="pagina_actual">
+        <img
+          src="./img/navegacion/linea-menu-3.png"
+          id="nav_galeria_linea"
+          alt=""
+        />
+
+        <img
+          src="./img/navegacion/menu-galeria-videos.png"
+          id="nav_galeria_videos"
+        />
+      </div>
+    </div>
+
+
+
+    <div class="boton_arriba">
+      <a href="./Gran_Ricardo.html">
+        <img src="./img/pagina2/gran-ricardo-flecha-2.png" alt="" />
+      </a>
+    </div>
+
+    <div class="boton_abajo">
+      <a href="./Cierre.html">
+        <img src="./img/pagina2/gran-ricardo-flecha-1.png" alt="" />
+      </a>
+    </div>
+
+    <div class="moverse_abajo">
+      <a href="./Cierre.html">
+        <img src="./img/pagina5/arrow-down.png" alt="" srcset="" />
+      </a>
+    </div>
+    <div class="moverse_arriba">
+      <a href="./Gran_Ricardo.html">
+        <img src="./img/pagina5/up-arrow.png" alt="" srcset="" />
+      </a>
+    </div>
+    <script src="./js/simple-mobile-menu.js"></script>
+  </body>
+</html>

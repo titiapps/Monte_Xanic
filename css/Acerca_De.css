@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  }
+
+
+.foto img{
+  justify-content: center;
+  height: 500px;
+  width: 400px;
+  position: fixed;
+  padding-top: 5%;
+  padding-left: 15%;
+}
+.texto img {
+  height: 600px;
+  width: 500px;
+  position: fixed;
+  padding-top: 5%;
+  padding-left: 44%;
+
+}
+.logo_xanic {
+  height: 500px;
+  width: 400px;
+  position: fixed;
+  padding-top: 20%;
+  padding-left: 15px;
+
+}
+
+.nav img {
+  position: fixed;
+  right: 0;
+  top: 42%;
+  width: 200px;
+  height: 100px;
+}
+
+.boton_arriba {
+  position: fixed;
+  top: 0;
+  left: 49%;
+}
+
+.boton_abajo {
+  padding-bottom: 0.3rem;
+  position: fixed;
+  bottom: 0;
+  left: 48%;
+}
+
+.boton_abajo img {
+
+  height: 40px;
+  width: 40px;
+}
+.boton_arriba img{
+  padding-top: 0.1rem;
+  height: 40px;
+  width: 40px;
+}
+.animate-in {
+    -webkit-animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

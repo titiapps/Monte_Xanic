@@ -1,0 +1,1367 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    margin: 0;
+    /*  background-image: url("./img/pagina3/fondo.png"); */
+}
+
+
+#logoPrem {
+    position: fixed;
+    left: 5%;
+    top: 3%;
+}
+
+.descText {
+    left: 20%;
+    top: 28%;
+}
+
+
+.navegacion {
+    position: fixed;
+    right: 0;
+    top: 44%;
+}
+
+.navegacion img {
+    display: block;
+    width: 170px;
+    height: 25px;
+    z-index: 4;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.principal_nav {
+    margin-top: 3px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    z-index: 3;
+}
+
+#nav_gran_ricardo2, #nav_gran_ricardo, #nav_acerca, #nav_monte_xanic_gr,.pagina_actual img:first-child {
+    display: none;
+}
+
+.logo_xanic {
+    position: fixed;
+    z-index: 2;
+    top: 45%;
+    left: 1.5%;
+    min-width: 10%;
+}
+
+.logo_xanic img {
+    width: 90px;
+    height: 90px;
+}
+
+.logoXan{
+    position: fixed;
+    top: 35%;
+    left: 1%;
+
+}
+
+.principal {
+    min-height: 100vh;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+ .fondo {
+    position: fixed;
+    z-index: -1;
+    left: 65%;
+    top: 5%;
+}
+
+.descText {
+    position: fixed;
+    left: 20%;
+    top: 28%;
+}
+
+.premios {
+    position: fixed;
+    top: 10%;
+}
+
+.content2 {
+    position: fixed;
+    right: 15%;
+    top: 22%;
+    width: 100%;
+}
+
+.content1 {
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 30rem;
+    flex: 0 1 calc(20% - 1rem);
+}
+
+.content1 img {
+    padding-right: 0.5rem;
+    max-height: 20rem;
+}
+
+.content2 {
+    position: fixed;
+    right: 15%;
+    top: 22%;
+}
+
+
+
+.content3 {
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.content3 .elementos {
+    max-height: 50%;
+    display: flex;
+}
+
+.content3 .elementos img {
+    max-width: 100%;
+}
+
+.content3 .elementos .logoX {
+    padding-top: 3rem;
+    flex: 0 1 calc(10% - 1rem);
+    padding-right: 1rem;
+}
+
+.content3 .elementos .premios {
+    flex: 0 1 calc(38% - 1rem);
+}
+
+/*.content3 .elementos .descText {
+    flex: 1;
+    text-align: center;
+
+}*/
+
+
+
+.content3 .elementos .logoX img {
+    width: 60px;
+    height: 60px;
+}
+
+.boton_arriba {
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+
+.boton_abajo {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+.boton_arriba img, .boton_abajo img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+
+@media (min-height: 1600px) and (max-device-width: 2880px) {
+
+    #logoPrem{
+        top: 3%;
+        left: 2%;
+        height: 20%;
+    }
+
+
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 70%;
+        top: 6.5%;
+    }
+
+    .fondo img{
+        height: 100rem;
+    }
+
+    .descText {
+        left: 20.5%;
+        top: 28%;
+    }
+    .descText img{
+        height: 60rem;
+    }
+
+    .content2 {
+        right: 70%;
+        left: 0;
+        top: 24%;
+    }
+
+    .content2 img{
+        width: 69%;
+
+
+    }
+
+    .content1{
+        padding-left: 48rem;
+    }
+
+    .content1 img{
+        height: 16rem;
+    }
+
+}
+
+@media (min-height: 1000px) and (max-device-width: 2560px) {
+
+
+    #logoPrem{
+        top: 3%;
+        left: 2%;
+        height: 20%;
+    }
+
+
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 68%;
+        top: 8.5%;
+    }
+
+    .fondo img{
+        height: 63rem;
+    }
+
+    .descText {
+        left: 28.5%;
+        top: 27%;
+    }
+    .descText img{
+        height: 42rem;
+    }
+
+
+    .content2 {
+        right: 90%;
+        left: 0;
+        top: 24%;
+    }
+
+    .content2 img{
+        width: 67%;
+
+
+    }
+
+    .content1{
+        padding-left: 43rem;
+    }
+
+    .content1 img{
+        height: 12rem;
+    }
+
+
+}
+
+
+
+/* (1920x1080) Full HD Display */
+@media (max-height: 1000px) and (max-device-width: 1920px) {
+
+    #logoPrem{
+        top: 4%;
+        height: 20%;
+    }
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 65%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 50rem;
+    }
+
+
+    .descText {
+        position: fixed;
+        left: 17.6%;
+        top: 23%;
+    }
+
+    .descText img{
+        height: 40rem;
+    }
+
+
+    .content2 {
+        position: fixed;
+        right: 12%;
+        top: 22%;
+        width: 100%;
+    }
+
+    .content1 {
+        padding-left: 32rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+
+}
+
+
+@media  (min-height: 1000px) and (max-device-width: 1920px) {
+
+    #logoPrem{
+        top: 4%;
+        height: 20%;
+    }
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 65%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 50rem;
+    }
+
+
+    .descText {
+        position: fixed;
+        left: 17.6%;
+        top: 23%;
+    }
+
+    .descText img{
+        height: 40rem;
+    }
+
+
+    .content2 {
+        position: fixed;
+        right: 12%;
+        top: 22%;
+        width: 100%;
+    }
+
+    .content1 {
+        padding-left: 32.3rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+
+}
+
+
+@media  (min-height: 1050px) and (max-device-width: 1920px) {
+
+    #logoPrem{
+        top: 5%;
+        height: 20%;
+    }
+
+
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 68%;
+        top: 8.5%;
+    }
+
+    .fondo img{
+        height: 63rem;
+    }
+
+    .descText {
+        left: 17%;
+        top: 29%;
+    }
+    .descText img{
+        height: 42rem;
+    }
+
+    .content2 {
+        right: 8%;
+        top: 25%;
+        width: 102%;
+    }
+
+    .content1{
+        padding-left: 33rem;
+    }
+
+    .content1 img{
+        height: 10rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 8%;
+    }
+
+    .premios img{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+
+
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px) {
+    #logoPrem{
+        top: 4%;
+        height: 20%;
+    }
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 68%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 63rem;
+    }
+
+    .descText {
+        left: 15%;
+        top: 26%;
+    }
+    .descText img{
+        height: 40rem;
+    }
+
+    .content2 {
+        right: 17.5%;
+        top: 25%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 29.5rem;
+    }
+
+    .content1 img{
+        height: 14rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 8%;
+    }
+
+    .premios img{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+/* (1600x900) HD+ Display */
+@media  screen and (max-width: 1600px) {
+
+    #logoPrem{
+        top: 5%;
+        height: 20%;
+    }
+
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 70%;
+        top: 10.5%;
+    }
+
+    .fondo img{
+        height: 50rem;
+    }
+
+    .descText {
+        left: 19.8%;
+        top: 27%;
+    }
+    .descText img{
+        height: 35rem;
+    }
+
+    .content2 {
+        right: 22%;
+        top: 25%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 28.5rem;
+    }
+
+    .content1 img{
+        height: 9rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 8%;
+    }
+
+    .premios img{
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media  (min-height: 745px) and (max-device-width: 1440px) {
+    #logoPrem{
+        top: 7%;
+        left: 2%;
+        height: 20%;
+    }
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 70%;
+        top: 12%;
+    }
+
+    .fondo img{
+        height: 42rem;
+    }
+
+    .descText {
+        left: 25%;
+        top: 28%;
+    }
+    .descText img{
+        height: 28rem;
+    }
+
+    .content2 {
+        right: 32.7%;
+        top: 26%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 25.5rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 10%;
+    }
+
+    .premios img{
+        height: 80%;
+        width: 80%;
+    }
+
+}
+
+
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+    #logoPrem{
+        top: 9%;
+        height: 21%;
+    }
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 68%;
+        top: 12%;
+    }
+
+    .fondo img{
+        height: 44rem;
+    }
+
+    .descText {
+        left: 22.6%;
+        top: 32%;
+    }
+    .descText img{
+        height: 28rem;
+    }
+
+    .content2 {
+        right: 38.5%;
+        top: 29%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 24rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 10%;
+    }
+
+    .premios img{
+        height: 80%;
+        width: 80%;
+    }
+
+}
+
+@media (min-device-height: 1024px) and (max-device-width: 1366px) {
+    #logoPrem{
+        top: 4%;
+        left: 3%;
+        height: 15%;
+    }
+    .logoXan{
+        top: 40%;
+        left: 1%;
+    }
+
+    .fondo {
+
+        left: 67%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 56rem;
+    }
+
+    .descText {
+        left: 17.8%;
+        top: 23%;
+    }
+    .descText img{
+        height: 30rem;
+    }
+
+    .content2 {
+        right: 39.5%;
+        top: 20%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 24rem;
+    }
+
+    .content1 img{
+        height: 7rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 9%;
+    }
+
+    .premios img{
+        height: 65%;
+        width: 65%;
+    }
+
+
+
+}
+
+
+@media (max-width: 1366px) and (max-height: 700px ) {
+    #logoPrem{
+        top: 10%;
+        left: 5%;
+        height: 20%;
+    }
+
+    .logoXan{
+        top: 45%;
+        left: 1%;
+    }
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 68%;
+        top: 14%;
+    }
+
+    .fondo img{
+        height: 32rem;
+    }
+
+    .descText {
+        left: 28.2%;
+        top: 32%;
+    }
+    .descText img{
+        height: 23rem;
+    }
+
+    .content2 {
+        position: fixed;
+        right: 40.8%;
+        top: 29%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 23.8rem;
+    }
+
+    .content1 img{
+        height: 6.5rem;
+    }
+
+
+
+}
+
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px) {
+    /* insert styles here */
+    .logoXan{
+        top: 37%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 4rem;
+    }
+
+    .fondo {
+        left: 68%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 50rem;
+    }
+
+    .descText {
+        left: 15.5%;
+        top: 21%;
+    }
+    .descText img{
+        height: 34rem;
+    }
+
+    .content2 {
+        right: 42.5%;
+        top: 22%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 23rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 7%;
+    }
+
+    .premios img{
+        height: 70%;
+        width: 70%;
+    }
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media  screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    #logoPrem{
+        top: 5%;
+        left: 2%;
+        height: 20%;
+    }
+    /* insert styles here */
+    .logoXan{
+        top: 50%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 5rem;
+    }
+
+    .fondo {
+        left: 70%;
+        top: 13%;
+    }
+
+    .fondo img{
+        height: 41rem;
+    }
+
+    .descText {
+        left: 23%;
+        top: 31%;
+    }
+    .descText img{
+        height: 27rem;
+    }
+
+    .content2 {
+        right: 43.5%;
+        top: 28%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 23rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 10%;
+    }
+
+    .premios img{
+        height: 80%;
+        width: 80%;
+    }
+
+
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    #logoPrem{
+        top: 6%;
+        left: 2%;
+        height: 18%;
+    }
+
+    .logoXan{
+        top: 47%;
+        left: 1%;
+    }
+
+    .fondo {
+
+        left: 70%;
+        top: 11%;
+    }
+
+    .fondo img{
+        height: 34rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 16.3%;
+        top: 27%;
+    }
+    .descText img{
+        height: 25rem;
+    }
+
+    .content2 {
+        right: 71.5%;
+        top: 24%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 19rem;
+    }
+
+    .content1 img{
+        height: 6rem;
+    }
+
+    .premios{
+        top: 10%;
+        left: 9%;
+    }
+
+    .premios img{
+        height: 55%;
+        width: 55%;
+    }
+
+}
+
+
+
+/*
+
+@media(min-width:1000px) {
+
+    .logoXan{
+        top: 35%;
+        left: 1%;
+    }
+
+    .logoXan img{
+        height: 5rem;
+    }
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 68%;
+        top: 11%;
+    }
+
+    .fondo img{
+        height: 35rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 20%;
+        top: 21%;
+    }
+    .descText img{
+        height: 24rem;
+    }
+
+    .content2 {
+        position: fixed;
+        right: 73.5%;
+        top: 24%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 18rem;
+    }
+
+    .content1 img{
+        height: 5.7rem;
+    }
+
+
+    .principal .fondo {
+
+        left: 72%;
+        top: 8%;
+    }
+
+    .principal .fondo img {
+        height: 70%;
+        width: 75%;
+
+    }
+
+    .content3 .elementos .logoX {
+        padding-top: 3rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 70px;
+        height: 70px;
+    }
+    .content3 .elementos img {
+        max-width: 90%;
+    }
+}
+
+@media(min-width:1200px) {
+
+    .logoXan{
+        top: 40%;
+        left: 1%;
+    }
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 65%;
+        top: 11%;
+    }
+
+    .fondo img{
+        height: 40rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 20%;
+        top: 22%;
+    }
+    .descText img{
+        height: 30rem;
+    }
+
+    .content2 {
+        position: fixed;
+        right: 40.5%;
+        top: 26%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 22rem;
+    }
+
+    .content1 img{
+        height: 7rem;
+    }
+
+
+
+    .content3 .elementos .logoX {
+        padding-top: 5rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion {
+        position: fixed;
+        right: 0;
+        top: 45%;
+    }
+}
+
+@media(min-width:1200px) and (height: 625px) {
+
+    .logoXan{
+        top: 45%;
+        left: 1%;
+    }
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 68%;
+        top: 14%;
+    }
+
+    .fondo img{
+        height: 32rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 23%;
+        top: 24%;
+    }
+    .descText img{
+        height: 28rem;
+    }
+
+    .content2 {
+        position: fixed;
+        right: 40.5%;
+        top: 29%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 22.5rem;
+    }
+
+    .content1 img{
+        height: 6.5rem;
+    }
+
+
+
+    .content3 .elementos .logoX {
+        padding-top: 5rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion {
+        position: fixed;
+        right: 0;
+        top: 45%;
+    }
+}
+
+@media(min-width:1200px) and (min-height: 1023px) {
+
+    .logoXan{
+        top: 30%;
+        left: 1%;
+    }
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 67%;
+        top: 8%;
+    }
+
+    .fondo img{
+        height: 45rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 20%;
+        top: 22%;
+    }
+    .descText img{
+        height: 30rem;
+    }
+
+    .content2 {
+        position: fixed;
+        right: 40.5%;
+        top: 20%;
+        width: 100%;
+    }
+
+    .content1{
+        padding-left: 22rem;
+    }
+
+    .content1 img{
+        height: 7rem;
+    }
+
+
+
+    .content3 .elementos .logoX {
+        padding-top: 5rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion {
+        position: fixed;
+        right: 0;
+        top: 45%;
+    }
+}
+
+@media(min-width:1500px) {
+
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 65%;
+        top: 9%;
+    }
+
+    .fondo img{
+        height: 50rem;
+    }
+
+
+    .descText {
+        position: fixed;
+        left: 20.6%;
+        top: 20%;
+    }
+
+    .descText img{
+        height: 40rem;
+    }
+
+
+    .content2 {
+        position: fixed;
+        right: 12%;
+        top: 22%;
+        width: 100%;
+    }
+
+    .content1 {
+        padding-left: 30rem;
+    }
+
+    .content1 img{
+        height: 8rem;
+    }
+
+    .content3 .elementos .logoX {
+        padding-top: 7rem;
+    }
+    .navegacion {
+        top: 38%;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media(min-width:1900px) {
+
+
+    .fondo {
+        position: fixed;
+        z-index: -1;
+        left: 65%;
+        top: 8%;
+    }
+
+    .fondo img{
+        height: 55rem;
+    }
+
+    .descText {
+        position: fixed;
+        left: 20.6%;
+        top: 20%;
+    }
+
+    .descText img{
+        height: 40rem;
+    }
+
+
+    .content2 {
+        position: fixed;
+        right: 11.3%;
+        top: 22%;
+        width: 100%;
+    }
+
+    .content1 {
+        padding-left: 30rem;
+    }
+
+    .content1 img{
+        height: 9rem;
+    }
+
+    .content3 .elementos .logoX {
+        padding-top: 7rem;
+    }
+    .navegacion {
+        top: 38%;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+ */
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,1523 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgba(0,0,0,1);
+}
+
+.navegacion {
+  position: fixed;
+  right: 0;
+  top: 44%;
+  z-index: 100001;
+}
+
+.navegacion img {
+  display: block;
+  width: 170px;
+  height: 25px;
+  z-index: 100001;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+
+#nav_gran_ricardo2, #nav_gran_ricardo, #nav_premios, #nav_acerca, #nav_monte_xanic_gr,.pagina_actual img:first-child {
+  display: none;
+}
+#saltarvideox {
+  position: fixed;
+  z-index: 201;
+  top: 60%;
+  left: 58%;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+
+#contenidoB {
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: -1;
+
+}
+
+#videoBack {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+
+}
+
+.logo_xanic {
+  position: fixed;
+  z-index: 2;
+  top: 45%;
+  left: 1.5%;
+  min-width: 10%;
+}
+
+.logo_xanic img {
+  width: 90px;
+  height: 90px;
+}
+
+.popupIcon {
+  position: fixed;
+  top: 40%;
+  left: 1%;
+}
+
+.popupIcon img{
+  height: 70%;
+  width: 70%;
+
+}
+
+.popupLogo {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+
+}
+
+.popupLogo img{
+  height: 80%;
+}
+
+.bottle {
+  position: fixed;
+  top: 2%;
+  left: 35%;
+
+}
+
+.bottle img{
+  height: 18%;
+  width: 18%;
+}
+
+.granRick {
+  position: fixed;
+  top: 40%;
+  left: 92%;
+
+}
+
+.granRick img{
+  height: 90%;
+
+}
+
+
+
+.boton_arriba {
+  position: fixed;
+  top: 0;
+  left: 49%;
+}
+
+.boton_abajo {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 100000;
+}
+
+.boton_arriba img, .boton_abajo img {
+  height: 40px;
+  width: 40px;
+}
+
+
+.contenido {
+  margin-top: 2rem;
+  min-height: 85vh;
+  max-height: 120vh;
+  background-image: url("../img/gran-ricardo-marco_2.png");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo1994_2019 {
+  padding-top: 5rem;
+}
+
+.ricardoLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+}
+
+.ricardoLogo img{
+max-height: 800%;
+
+}
+
+.videoBar{
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+.demo img{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+}
+
+
+
+/* MEDIA QUERIES  */
+
+
+@media (min-height: 1600px) and (max-device-width: 2880px) {
+
+  .logo{
+    padding-top: 3rem;
+  }
+  .logo1994_2019 {
+    padding-top: 0.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 300px;
+    max-width: 450px;
+
+  }
+
+  .ricardoLogo{
+    padding-top: 14rem;
+  }
+
+  .ricardoLogo img {
+    max-height: 500px;
+    max-width: 600px;
+  }
+
+  .videoBar {
+    padding-top: 16.5rem;
+
+  }
+
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 14rem;
+  }
+
+
+}
+
+@media (min-height: 900px) and (max-device-width: 2560px) {
+
+  .logo{
+    padding-top: 1rem;
+  }
+  .logo1994_2019 {
+    padding-top: 0.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 250px;
+    max-width: 350px;
+
+  }
+
+  .ricardoLogo{
+    padding-top: 8rem;
+  }
+
+  .ricardoLogo img {
+    max-height: 300px;
+    max-width: 400px;
+  }
+
+  .videoBar {
+    padding-top: 7.5rem;
+
+  }
+
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 10rem;
+  }
+
+
+}
+
+@media (min-height: 1400px) and (max-device-width: 2048px) {
+
+  .logo{
+    padding-top: 3rem;
+  }
+  .logo1994_2019 {
+    padding-top: 0.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 300px;
+    max-width: 450px;
+
+  }
+
+  .ricardoLogo{
+    padding-top: 14rem;
+  }
+
+  .ricardoLogo img {
+    max-height: 300px;
+    max-width: 400px;
+  }
+
+  .videoBar {
+    padding-top: 16.5rem;
+
+  }
+
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 10rem;
+  }
+
+
+}
+
+@media(min-height: 1000px) and (max-device-width: 1920px) {
+
+  #saltarvideox {
+    top: 60%;
+    left: 58%;
+  }
+
+  .popupIcon {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 42%;
+    left: 51%;
+
+  }
+
+  .popupLogo img{
+    height: 12rem
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 3%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 21%;
+    width: 21%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 250px;
+    max-width: 400px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 350px;
+    max-width: 400px;
+  }
+
+  .videoBar {
+    padding-top: 7em;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .xxv {
+    padding-top: 2rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 300px;
+  }
+}
+
+@media(min-height: 900px) and (max-device-width: 1920px) {
+
+  #saltarvideox {
+    top: 60%;
+    left: 58%;
+  }
+
+
+  .popupIcon {
+    position: fixed;
+    top: 40%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 38%;
+    left: 51%;
+
+  }
+
+  .popupLogo img{
+    height: 12rem;
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 2%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 18%;
+    width: 18%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 40%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 300px;
+
+  }
+
+  .ricardoLogo img {
+    padding-top: 1rem;
+    max-height: 300px;
+    max-width: 450px;
+  }
+
+  .videoBar {
+    padding-top: 2rem;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+  .xxv {
+    padding-top: 5.5rem;
+
+  }
+
+  .xxv img{
+    max-height: 150px;
+    max-width: 250px;
+  }
+}
+
+@media (min-height: 1000px) and (max-device-width: 1680px) {
+  #saltarvideox {
+    top: 60%;
+    left: 57%;
+  }
+
+  .popupIcon {
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 42%;
+    left: 50%;
+
+  }
+
+  .popupLogo img{
+    height: 11rem;
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+
+  }
+
+  .bottle img{
+    height: 21%;
+    width: 21%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 250px;
+    max-width: 400px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 350px;
+    max-width: 400px;
+  }
+
+  .videoBar {
+    padding-top: 7em;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .xxv {
+    padding-top: 2rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+
+}
+
+@media (min-height: 900px) and (max-device-width: 1600px) {
+  #saltarvideox {
+    top: 60%;
+    left: 60%;
+  }
+
+
+  .popupIcon {
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 40%;
+    left: 54%;
+
+  }
+
+  .popupLogo img{
+    height: 10rem;
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 2%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 21%;
+    width: 21%;
+  }
+
+  .granRick {
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 300px;
+
+  }
+
+  .ricardoLogo img {
+    padding-top: 1rem;
+    max-height: 300px;
+    max-width: 450px;
+  }
+
+  .videoBar {
+    padding-top: 2rem;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+  .xxv {
+    padding-top: 5.5rem;
+
+  }
+
+  .xxv img{
+    max-height: 150px;
+    max-width: 250px;
+  }
+
+
+}
+
+@media(min-height: 745px) and (max-device-width: 1440px) {
+  #saltarvideox {
+    top: 60%;
+    left: 60%;
+  }
+
+
+  .popupIcon {
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 38%;
+    left: 51%;
+
+  }
+
+  .popupLogo img{
+    height: 12rem;
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 2%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 23%;
+    width: 23%;
+  }
+
+  .granRick {
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 300px;
+
+  }
+
+  .ricardoLogo img {
+    padding-top: 1rem;
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .videoBar {
+    padding-top: 1rem;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+  .xxv {
+    padding-top: 5.5rem;
+
+  }
+
+  .xxv img{
+    max-height: 150px;
+    max-width: 250px;
+  }
+
+}
+
+@media  (min-height: 600px) and (max-device-width: 1366px) {
+  #saltarvideox {
+    top: 70%;
+    left: 60%;
+  }
+
+  .popupIcon {
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupLogo {
+
+    top: 40%;
+    left: 52%;
+
+  }
+
+  .popupLogo img {
+    height: 12rem;
+
+  }
+
+  .granRick {
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img {
+
+    height: 6rem;
+
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 3%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 17%;
+    width: 17%;
+  }
+
+  .logo1994_2019 {
+    padding-top: 0.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 250px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+  .videoBar {
+    padding-top: 3.5rem;
+  }
+
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-height: 120px;
+    max-width: 220px;
+  }
+
+  .xxv {
+    padding-top: 1rem;
+
+  }
+
+  .xxv img{
+    max-height: 100px;
+    max-width: 150px;
+  }
+}
+
+@media(min-height:700px) and (max-device-width: 1366px){
+  #saltarvideox {
+    top: 65%;
+    left: 60%;
+  }
+
+  .popupIcon {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+  .popupLogo {
+
+    top: 43%;
+    left: 53%;
+
+  }
+
+  .popupLogo img {
+    height: 10rem;
+
+  }
+
+  .granRick {
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img {
+
+    height: 7rem;
+
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 4%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 20%;
+    width: 20%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+  .logo1994_2019 {
+    padding-top: 1.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 250px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .videoBar {
+    padding-top: 1rem;
+  }
+
+  .demo img {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-height: 150px;
+    max-width: 250px;
+  }
+
+  .xxv {
+    padding-top: 5rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 250px;
+  }
+}
+
+@media (min-height: 720px) and (max-device-width: 1280px) {
+  #saltarvideox {
+    top: 65%;
+    left: 60%;
+  }
+
+  .popupIcon {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+  .popupLogo {
+
+    top: 43%;
+    left: 53%;
+
+  }
+
+  .popupLogo img {
+    height: 10rem;
+
+  }
+
+  .granRick {
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img {
+
+    height: 7rem;
+
+
+  }
+
+  .bottle {
+    position: fixed;
+    top: 4%;
+    left: 35%;
+
+  }
+
+  .bottle img{
+    height: 20%;
+    width: 20%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+  .logo1994_2019 {
+    padding-top: 1.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 250px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .videoBar {
+    padding-top: 1rem;
+  }
+
+  .demo img {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-height: 150px;
+    max-width: 250px;
+  }
+
+  .xxv {
+    padding-top: 5rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 250px;
+  }
+}
+
+@media(min-height:1000px) and (max-device-width: 1280px) {
+  #saltarvideox {
+    top: 60%;
+    left: 58%;
+  }
+
+  .popupIcon {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+  }
+
+  .popupIcon img{
+    height: 70%;
+    width: 70%;
+
+  }
+
+  .popupLogo {
+    top: 42%;
+    left: 51%;
+
+  }
+
+  .popupLogo img{
+    height: 10rem;
+
+  }
+
+  .bottle {
+    top: 5%;
+    left: 30%;
+
+  }
+
+  .bottle img{
+    height: 26%;
+    width: 26%;
+  }
+
+  .granRick {
+    position: fixed;
+    top: 50%;
+    left: 92%;
+
+  }
+
+  .granRick img{
+    height: 90%;
+    width: 90%;
+
+  }
+
+
+  .logo1994_2019 {
+    padding-top: 1rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 250px;
+    max-width: 400px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 350px;
+    max-width: 400px;
+  }
+
+  .videoBar {
+    padding-top: 7em;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .xxv {
+    padding-top: 2rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+
+}
+
+@media (min-height: 768px) and (max-device-width: 1024px) {
+
+
+  .videoBar {
+    padding-top: 7.5rem;
+
+  }
+
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 5rem;
+  }
+
+}
+
+  @media(min-height:600px) and (max-device-width: 1366px) {
+    #saltarvideox {
+      top: 70%;
+      left: 60%;
+    }
+
+    .popupIcon {
+      top: 50%;
+      left: 1%;
+    }
+
+    .popupLogo {
+
+      top: 40%;
+      left: 52%;
+
+    }
+
+    .popupLogo img {
+      height: 12rem;
+
+    }
+
+    .granRick {
+      top: 50%;
+      left: 92%;
+
+    }
+
+    .granRick img {
+
+      height: 6rem;
+
+
+    }
+
+    .bottle {
+      position: fixed;
+      top: 3%;
+      left: 35%;
+
+    }
+
+    .bottle img{
+      height: 17%;
+      width: 17%;
+    }
+
+    .logo1994_2019 {
+      padding-top: 0.5rem;
+
+    }
+
+    .logo1994_2019 img{
+      max-height: 200px;
+      max-width: 250px;
+
+    }
+
+    .ricardoLogo img {
+      max-height: 200px;
+      max-width: 300px;
+    }
+
+    .videoBar {
+      padding-top: 3.5rem;
+    }
+
+    .demo img {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      max-height: 120px;
+      max-width: 220px;
+    }
+
+    .xxv {
+      padding-top: 1rem;
+
+    }
+
+    .xxv img{
+      max-height: 100px;
+      max-width: 150px;
+    }
+
+  }
+
+
+
+
+
+.animate-in {
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/*
+    Name: YouTubePopUp
+    Description: jQuery plugin to display YouTube or Vimeo video in PopUp, responsive and retina, easy to use.
+    Version: 1.0.1
+    Plugin URL: http://wp-time.com/youtube-popup-jquery-plugin/
+    Written By: Qassim Hassan
+    Twitter: @QQQHZ
+    Websites: wp-time.com | qass.im | wp-plugins.in
+    Dual licensed under the MIT and GPL licenses:
+        http://www.opensource.org/licenses/mit-license.php
+        http://www.gnu.org/licenses/gpl.html
+    Copyright (c) 2016 - Qassim Hassan
+*/
+
+.YouTubePopUp-Wrap{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:#000;
+  background-color:rgba(0,0,0,0.8);
+  top:0;
+  left:0;
+  z-index:9999999999999;
+}
+
+.YouTubePopUp-animation{
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: YouTubePopUp;
+  animation-name: YouTubePopUp;
+}
+
+@-webkit-keyframes YouTubePopUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes YouTubePopUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
+  top:32px;
+  z-index:99998;
+}
+
+.YouTubePopUp-Content{
+  max-width:680px;
+  display:block;
+  margin:0 auto;
+  height:100%;
+  position:relative;
+}
+
+.YouTubePopUp-Content iframe{
+  max-width:100% !important;
+  width:100% !important;
+  display:block !important;
+  height:480px !important;
+  border:none !important;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.YouTubePopUp-Hide{
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: YouTubePopUpHide;
+  animation-name: YouTubePopUpHide;
+}
+
+@-webkit-keyframes YouTubePopUpHide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes YouTubePopUpHide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.YouTubePopUp-Close{
+  position:absolute;
+  top:0;
+  cursor:pointer;
+  bottom:528px;
+  right:0px;
+  margin:auto 0;
+  width:24px;
+  height:24px;
+  background:url(../img/close.png) no-repeat;
+  background-size:24px 24px;
+  -webkit-background-size:24px 24px;
+  -moz-background-size:24px 24px;
+  -o-background-size:24px 24px;
+}
+
+.YouTubePopUp-Close:hover{
+  opacity:0.5;
+}
+
+@media all and (max-width: 768px) and (min-width: 10px){
+  .YouTubePopUp-Content{
+    max-width:90%;
+  }
+}
+
+@media all and (max-width: 600px) and (min-width: 10px){
+  .YouTubePopUp-Content iframe{
+    height:320px !important;
+  }
+
+  .YouTubePopUp-Close{
+    bottom:362px;
+  }
+}
+
+@media all and (max-width: 480px) and (min-width: 10px){
+  .YouTubePopUp-Content iframe{
+    height:220px !important;
+  }
+
+  .YouTubePopUp-Close{
+    bottom:262px;
+  }
+}
+
+
+
+.contenidoPopUpx{
+  position: fixed;
+  z-index: 200;
+  left: 5%;
+  top: 2%;
+  width: 90%;
+  height: 90%;
+
+}
+
+.contenidoPopUp{
+  position: fixed;
+  z-index: 200;
+  background: white;
+  left: 5%;
+  top: 2%;
+  width: 90%;
+  height: 90%;
+  border: 2px solid white;
+}
+
+#vercompleto {
+  position: fixed;
+  z-index: 201;
+  top: 80%;
+  left: 15%;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+#saltarvideo {
+  position: fixed;
+  z-index: 201;
+  top: 80%;
+  left: 80%;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+
+#firstVid,#secondVid,#thirdVid{
+  cursor: pointer;
+}

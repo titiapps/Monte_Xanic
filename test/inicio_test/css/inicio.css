@@ -1,0 +1,217 @@
+body {
+    background-color: black;
+    color: white;
+    height: 95vh;
+}
+
+
+.logo_xanic {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 1.5%;
+    min-width: 10%;
+}
+
+.logo_xanic img {
+    width: 90px;
+    height: 90px;
+}
+
+.boton_abajo {
+    position: fixed;
+    bottom: 0;
+    left: 73%;
+}
+
+.boton_abajo img {
+    width: 35px;
+    height: 35px;
+}
+
+.navegacion {
+    position: fixed;
+    z-index: 300;
+    right: 0;
+    top: 44%;
+}
+
+.navegacion {
+    position: fixed;
+    right: 0;
+    top: 44%;
+}
+.navegacion img {
+    display: block;
+    width: 170px;
+    height: 25px;
+    z-index: 3;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.principal_nav {
+    margin-top: 3px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    z-index: 3;
+}
+
+#nav_galeria_videos, #nav_gran_ricardo, #nav_premios, #nav_acerca, #nav_monte_xanic_gr, .pagina_actual img:first-child {
+    display: none;
+}
+
+@media(min-width:100px) and (max-width:579px) {
+
+    body {
+        color: white;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .contenido_movil {
+        width: 100%;
+        height: 90%;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .botella_texto {
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botella_texto .botella {
+        width: 25%;
+    }
+    .botella_texto .texto_15 {
+        width: 50%;
+    }
+    .botella img {
+        width: 100%;
+    }
+    .texto_15 img {
+        width: 100%;
+    }
+    .texto {
+        width: 100%;
+    }
+    .texto img {
+        width: 100%;
+    }
+    .historia {
+        text-align: center;
+        width: 100%;
+    }
+    .historia img {
+        width: 50%;
+    }
+    .boton_abajo {
+        position: fixed;
+        bottom: 0;
+        left: 45%;
+    }
+    .boton_abajo img {
+        width: 35px;
+        height: 35px;
+    }
+    .logo_xanic,.navegacion{
+        display: none;
+    }
+}
+
+@media(min-width:580px) {
+    .contenido_movil {
+        display: none;
+    }
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botella_textos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botella_textos .botella {
+    padding-right: 4rem;
+    width: 12%;
+}
+
+.botella img {
+    width: 100%;
+}
+
+.botella_textos .texto_15_descripcion {
+    padding-top: 5rem;
+    width: 48%;
+}
+
+.botella_textos .texto_15 {
+    width: 80%;
+}
+
+.botella_textos .descripcion {
+    width: 80%;
+}
+.botella_textos .historia{
+    width: 60%;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    text-align: right;
+    
+}
+.botella_textos .historia img{
+    width: 60%;
+}
+
+
+.botella_textos .texto_15 img {
+    width: 100%
+}
+
+.botella_textos .descripcion img {
+    width: 100%;
+}
+
+
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

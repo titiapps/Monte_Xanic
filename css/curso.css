@@ -1,0 +1,15 @@
+.uCurso {
+  list-style-type:disc;
+}
+
+.tCurso {
+  color: #09A59A;
+}
+
+.quoteCurso {
+
+  padding-top: 2rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+

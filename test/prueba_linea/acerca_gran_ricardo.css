@@ -1,0 +1,446 @@
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("./Avenir-Roman.ttf");
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    margin: 0;
+    font-family: "Avenir";
+}
+
+.boton_arriba {
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+
+.boton_abajo {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+.boton_arriba img, .boton_abajo img {
+    height: 40px;
+    width: 40px;
+}
+
+.principal {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_xanic {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 1.5%;
+    min-width: 10%;
+}
+
+.logo_xanic img {
+    width: 90px;
+    height: 90px;
+}
+
+.contenido_gran_ricardo {
+    height: 100vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.cajita {
+    padding-top: 1.7rem;
+    display: flex;
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajita img {
+    max-width: 45%;
+    max-height: 97%;
+}
+
+#cajita2_movil {
+    display: none;
+}
+
+@media(min-width:100px) and (max-width:579px) {
+    body {
+        color: white;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .contenido_gran_ricardo {
+        display: none;
+    }
+    .contenido_gran_ricardo_movil {
+        width: 100%;
+        margin: auto 0;
+    }
+    /* cajita1 la primer imagen*/
+    #cajita1_movil {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    #cajita1_movil .foto {
+        width: 75%;
+        text-align: center;
+    }
+    #cajita1_movil .foto img {
+        width: 85%;
+    }
+    #cajita1_movil .logo_15 {
+        width: 50%;
+    }
+    #cajita1_movil .logo_15 img {
+        width: 100%;
+    }
+    #cajita1_movil .logo_xani img {
+        width: 30px;
+        height: 30px;
+    }
+    #cajita1_movil .ano_historia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 75%;
+    }
+    #cajita1_movil .ano {
+        font-weight: 100;
+        text-align: left;
+        font-size: 1.5rem;
+        color: red;
+        margin-bottom: 0;
+    }
+    #cajita1_movil .historia {
+        text-align: center;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+    /*cajita 2*/
+    #cajita2_movil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    #cajita2_movil .foto {
+        width: 60%;
+        text-align: center;
+    }
+    #cajita2_movil .foto img {
+        width: 100%;
+    }
+    #cajita2_movil .logo_15 {
+        width: 45%;
+    }
+    #cajita2_movil .logo_15 img {
+        width: 100%;
+    }
+    #cajita2_movil .logo_xani img {
+        width: 30px;
+        height: 30px;
+    }
+    #cajita2_movil .ano_historia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        padding-bottom: 1rem;
+    }
+    #cajita2_movil .ano {
+        margin: 0;
+        font-weight: 100;
+        text-align: left;
+        font-size: 1.5rem;
+        color: red;
+        margin-bottom: 0;
+    }
+    #cajita2_movil .historia {
+        text-align: center;
+        padding-left: 0.4rem;
+        margin: 0;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+    /*cajita3*/
+    #cajita3_movil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    #cajita3_movil .foto {
+        width: 60%;
+        text-align: center;
+    }
+    #cajita3_movil .foto img {
+        width: 100%;
+    }
+    #cajita3_movil .logo_15 {
+        width: 45%;
+    }
+    #cajita3_movil .logo_15 img {
+        width: 100%;
+    }
+    #cajita3_movil .logo_xani img {
+        width: 30px;
+        height: 30px;
+    }
+    #cajita3_movil .ano_historia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        padding-bottom: 1rem;
+    }
+    #cajita3_movil .ano {
+        margin: 0;
+        font-weight: 100;
+        text-align: left;
+        font-size: 1.5rem;
+        color: red;
+        margin-bottom: 0;
+    }
+    #cajita3_movil .historia {
+        text-align: center;
+        padding-left: 0.4rem;
+        margin: 0;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+    /*CAJITA 4 */
+
+    #cajita4_movil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    #cajita4_movil .foto {
+        width: 70%;
+        text-align: center;
+    }
+    #cajita4_movil .foto img {
+        width: 100%;
+    }
+    #cajita4_movil .logo_15 {
+        width: 50%;
+    }
+    #cajita4_movil .logo_15 img {
+        width: 100%;
+    }
+    #cajita4_movil .logo_xani img {
+        width: 30px;
+        height: 30px;
+    }
+    #cajita4_movil .ano_historia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 75%;
+        padding-bottom: 1rem;
+    }
+    #cajita4_movil .ano {
+        margin: 0;
+        font-weight: 100;
+        text-align: left;
+        font-size: 1.4rem;
+        color: red;
+        margin-bottom: 0;
+    }
+    #cajita4_movil .historia {
+        text-align: center;
+        padding-left: 0.4rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        text-align: justify;
+        font-size: 1rem;
+    }
+   
+    .boton_arriba, .boton_abajo, .logo_xanic, .navegacion {
+        display: none;
+    }
+    .gran_rc_btn_derecha {
+        position: fixed;
+        top: 51%;
+        right: 0;
+    }
+    .gran_rc_btn_izquierda {
+        position: fixed;
+        top: 51%;
+        left: 0%;
+    }
+    .gran_rc_btn_izquierda img, .gran_rc_btn_derecha img {
+        width: 20px;
+    }
+}
+
+@media(min-width:320px) and (max-width:360px) {
+    #cajita1_movil {
+        padding-top: 1.5rem;
+        justify-content: center;
+    }
+    #cajita1_movil .foto {
+        width: 70%;
+        text-align: center;
+    }
+    #cajita1_movil .ano_historia {
+        width: 80%;
+    }
+    #cajita1_movil .historia {
+        font-size: 0.75rem;
+    }
+    #cajita2_movil {
+        padding-top: 1.5rem;
+        justify-content: center;
+    }
+    #cajita2_movil .foto {
+        width: 70%;
+        text-align: center;
+    }
+    #cajita2_movil .ano_historia {
+        width: 80%;
+    }
+    #cajita2_movil .historia {
+        font-size: 0.75rem;
+    }
+}
+
+@media(min-width:580px) {
+    .contenido_gran_ricardo_movil {
+        display: none;
+    }
+    .logo_xani, .moverse_derecha, .moverse_izquierda {
+        display: none;
+    }
+    .principal {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:950px) and (min-height:700px) {
+    .cajita img {
+        max-width: 51%;
+    }
+}
+
+@media(min-width:1300px) and (min-height:1000px) {
+    .cajita img {
+        max-width: 52%;
+    }
+}
+
+@media(min-width:1400px) and (min-height:740px) {
+    .cajita img {
+        max-width: 48%;
+    }
+}
+
+@media(min-width:1400px) and (min-height:950px) {
+    .cajita img {
+        max-width: 45%;
+    }
+}
+
+#cajita2, #cajita3, #cajita4 {
+    display: none;
+}
+
+#cajita2_movil, #cajita3_movil, #cajita4_movil {
+    display: none;
+}
+
+/* d4ni3l.krok */
+
+/* NAVEGACION */
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* NAVEGACION */
+
+.navegacion {
+    position: fixed;
+    right: 0;
+    top: 44%;
+}
+
+.navegacion img {
+    display: block;
+    width: 170px;
+    height: 25px;
+    z-index: 3;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.principal_nav {
+    margin-top: 3px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    z-index: 3;
+}
+
+#nav_galeria_videos, #nav_gran_ricardo, #nav_premios, #nav_monte_xanic_gr, .pagina_actual img:first-child {
+    display: none;
+}

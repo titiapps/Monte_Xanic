@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+}
+
+.boton_arriba {
+  position: fixed;
+  top: 0;
+  left: 48%;
+}
+
+.boton_abajo {
+  position: fixed;
+  bottom: 0;
+  left: 48%;
+}
+
+.boton_arriba img, .boton_abajo img {
+  padding-top: 1rem;
+  height: 50px;
+  width: 40px;
+}
+
+.principal {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_xanic {
+  position: relative;
+  padding-right: 2rem;
+  z-index: 2;
+
+  min-width: 10%;
+}
+
+.logo_xanic img {
+  width: 90px;
+  height: 90px;
+}
+
+.contenido_gran_ricardo {
+  min-height: 60vh;
+  min-width: 70%;
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.cajita .rostro img {
+  max-height: 65vh;
+  max-width: 50vw;
+}
+
+.cajita .texto img {
+  max-height: 65vh;
+  max-width: 60vw;
+  padding-right: 2rem;
+}
+
+.cajita {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* d4ni3l.krok */
+
+/* NAVEGACION */
+
+.navegacion_gran_ricardo img {
+  width: 8rem;
+  height:6rem;
+}

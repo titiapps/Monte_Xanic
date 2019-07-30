@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../img/pagina2/fondo_botella.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+}
+
+
+
+
+@media(min-width:100px) and (max-width:579px) {
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        background-image: none;
+    }
+    .principal_movil {
+        margin: auto 0;
+        padding-top: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    #elemento1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento1 .texto {
+        width: 70%;
+    }
+    #elemento1 .texto img {
+        width: 100%;
+    }
+    #elemento1 .categoria {
+        text-align: center;
+        
+        width: 45%;
+    }
+    #elemento1 .categoria img {
+        width: 100%;
+    }
+    #elemento1 .botella {
+        width: 20%;
+    }
+    #elemento1 .botella img {
+        width: 100%;
+    }
+    /* elemento 2 crianza */
+    #elemento2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento2 .texto {
+        width: 80%;
+    }
+    #elemento2 .texto img {
+        width: 100%;
+    }
+    #elemento2 .categoria {
+        text-align: center;
+        width: 40%;
+    }
+    #elemento2 .categoria img {
+        width: 100%;
+    }
+    #elemento2 .botella {
+        width: 20%;
+    }
+    #elemento2 .botella img {
+        width: 100%;
+    }
+    /* elemento 3 notas de cata */
+    #elemento3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento3 .texto {
+        width:90%;
+        margin-right: 1rem;
+    }
+    #elemento3 .texto img {
+        width: 100%;
+    }
+    #elemento3 .categoria {
+        padding-top: 2rem;
+        text-align: center;
+        
+        width: 60%;
+    }
+    #elemento3 .categoria img {
+        width: 100%;
+    }
+    #elemento3 .botella {
+        width: 16%;
+    }
+    #elemento3 .botella img {
+        width: 100%;
+    }
+    /* elemento 4 recomendaciones gastronomicas */
+    #elemento4 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento4 .texto {
+        width: 97%;
+    }
+    #elemento4 .texto img {
+        width: 100%;
+    }
+    #elemento4 .categoria {
+        text-align: center;
+        width: 60%;
+    }
+    #elemento4 .categoria img {
+        width: 100%;
+    }
+    #elemento4 .botella {
+        width: 20%;
+    }
+    #elemento4 .botella img {
+        width: 100%;
+    }
+       /* elemento 5 firma distintiva */
+       #elemento5 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento5 .texto {
+        width: 97%;
+    }
+    #elemento5 .texto img {
+        width: 100%;
+    }
+    #elemento5 .categoria {
+        text-align: center;
+        width: 65%;
+    }
+    #elemento5 .categoria img {
+        width: 100%;
+    }
+    #elemento5 .botella {
+        width: 20%;
+    }
+    #elemento5 .botella img {
+        width: 100%;
+    }
+    .botella_cat_btn_derecha {
+        position: fixed;
+        top: 51%;
+        right: 0;
+    }
+    .botella_cat_btn_izquierda {
+        position: fixed;
+        top: 51%;
+        left: 0%;
+    }
+    .botella_cat_btn_derecha img, .botella_cat_btn_izquierda img {
+        width: 20px;
+    }
+}
+
+
+ #elemento2, #elemento3, #elemento4, #elemento5 {
+    display: none;
+}

@@ -1,0 +1,390 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+.contenido {
+    margin-top: 2rem;
+    min-height: 85vh;
+    max-height: 90vh;
+    background-image: url("./img/gran-ricardo-marco.png");
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo1994_2019 {
+    padding-top: 1rem;
+}
+
+.vino_mensaje {
+    padding-top: 1rem;
+    display: flex;
+    max-width: 90vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.vino_mensaje img:nth-child(1) {
+    padding-left: 3rem;
+    padding-right: 15rem;
+    max-height: 350px;
+}
+
+.contenido_entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido .mayor_18 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.contenido_entrar .mayor_18 img {
+    max-height: 7rem;
+}
+
+.contenido .si_no_botones {
+    display: flex;
+}
+
+.contenido_entrar .si_no_botones img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    max-height: 8rem;
+    max-width: 90px;
+}
+
+.contenido_entrar .si_no_botones img:nth-child(1) {
+    max-height: 3.6rem;
+}
+
+.botella {
+    position: absolute;
+    z-index: -2;
+    top: -2%;
+    left: 5%;
+}
+
+.botella img {
+    max-width: 44vw;
+}
+
+/* MEDIA QUERIES  */
+
+
+@media(min-width:1000px) and (min-height:700px) {
+ 
+  
+    .vino_mensaje img:nth-child(1) {
+        
+        padding-right: 10rem;
+        max-height: 410px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -5%;
+        left: 2%;
+    }
+    .botella img {
+        max-width: 66%;
+    }
+}
+@media(min-width:1000px) and (min-height:650px) {
+    .vino_mensaje {
+        justify-content: flex-end;
+
+    }
+    .vino_mensaje img:nth-child(1) {
+        
+        padding-right: 3rem;
+        max-height: 410px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -3%;
+        left: -10%;
+    }
+    .botella img {
+        max-width: 62%;
+    }
+}
+@media(min-width:1000px) and (min-height:750px) {
+    .vino_mensaje {
+        justify-content: flex-end;
+
+    }
+    .vino_mensaje img:nth-child(1) {
+        
+        padding-right: 3rem;
+        max-height: 430px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -3%;
+        left: -10%;
+    }
+    .botella img {
+        max-width: 66%;
+    }
+}
+
+
+@media(min-width:1300px) and (min-height:660px) {
+    .vino_mensaje {
+        justify-content: flex-end;
+
+    }
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 400px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left: 0%;
+    }
+    .botella img {
+        max-width: 65%;
+    }
+    .contenido .mayor_18 {
+        padding-top: 1.1rem;
+      
+    }
+}
+@media(min-width:1300px) and (min-height:760px) {
+    .vino_mensaje {
+        justify-content: flex-end;
+
+    }
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 440px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left: 0%;
+    }
+    .botella img {
+        max-width: 70%;
+    }
+    .contenido .mayor_18 {
+        padding-top: 1.1rem;
+      
+    }
+}
+@media(min-width:1300px) and (min-height:950px) {
+    .vino_mensaje {
+        justify-content: flex-end;
+
+    }
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 3rem;
+        max-height: 635px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left: -10%;
+    }
+    .botella img {
+        max-width: 85%;
+    }
+}
+
+
+@media(min-width:1400px) and (min-height:700px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 465px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -6%;
+        left:2%;
+    }
+    .botella img {
+        max-width: 800px;
+    }
+}
+@media(min-width:1400px) and (min-height:840px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 540px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -6%;
+        left:2%;
+    }
+    .botella img {
+        max-width: 800px;
+    }
+}
+@media(min-width:1400px) and (min-height:950px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 800px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -6%;
+        left: 5%;
+    }
+    .botella img {
+        max-width: 1000px;
+    }
+}
+
+
+
+
+@media(min-width:1800px) and (min-height:940px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 15rem;
+        max-height: 605px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left:4%;
+    }
+    .botella img {
+        max-width: 890px;
+    }
+    .contenido .mayor_18 {
+        padding-top: 1.2rem;
+      
+    }
+}
+@media(min-width:1910px) and (min-height:1060px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 680px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left:4%;
+    }
+    .botella img {
+        max-width: 950px;
+    }
+    .contenido .mayor_18 {
+        padding-top: 1rem;
+      
+    }
+}
+@media(min-width:1910px) and (min-height:1060px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 10rem;
+        max-height: 680px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left:4%;
+    }
+    .botella img {
+        max-width: 950px;
+    }
+    .contenido .mayor_18 {
+        padding-top: 1rem;
+      
+    }
+}
+@media(min-width:2700px) and (min-height:1600px) {
+   
+    .vino_mensaje img:nth-child(1) {
+        padding-right: 12rem;
+        min-height: 1050px;
+        max-height: 2000px;
+    }
+    .botella {
+        position: absolute;
+        z-index: -2;
+        top: -4%;
+        left:4%;
+    }
+    .botella img {
+        min-width: 1500px;
+        max-width: 2000px;
+    }
+    .contenido .mayor_18 {
+        padding-top: 10rem;
+      
+    }
+    .contenido_entrar .si_no_botones img {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        min-height: 8rem;
+        max-height: 10rem;
+        min-width: 180px;
+        max-width: 190px;
+    }
+}
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

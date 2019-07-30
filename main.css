@@ -1,0 +1,365 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    /*  background-image: url("./img/pagina5/1.jpg"); */
+    font-family: "Avenir";
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.principal .fondo {
+    margin: 0 auto;
+    z-index: -3;
+    text-align: center;
+    height: calc(var(--vh, 1vh) * 100);
+    min-width: 90vw;
+    max-width: 90vw;
+}
+
+.principal .fondo img {
+    width: 100%;
+    height: 100%;
+}
+
+.principal .opcion_si_no {
+    position: absolute;
+    left: 0;
+    bottom: 5.4%;
+    right: 0;
+    margin: 0 auto;
+    max-width: 280px;
+    text-align: center;
+}
+
+.principal .opcion_si_no img:first-child {
+    width: 65%;
+}
+
+.si_no_botones {
+    margin-top: 0.3rem;
+}
+
+.si_no_botones img {
+    max-width: 25%;
+    margin: 0 0.2rem;
+    display: inline-block;
+}
+
+/* DE AQUI EMPIEZA LO DEL CONTENIDO */
+
+.principal .logo_xanic {
+    position: absolute;
+    left: 0;
+    top: 5.2%;
+    right: 0;
+    margin: 0 auto;
+    max-width: 170px;
+}
+
+.principal .logo_xanic img {
+    width: 100%;
+}
+
+.botellita {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: -10;
+    max-width: 66%;
+}
+
+.botellita img {
+    width: 100%;
+}
+
+.principal .logo15 {
+    padding-top: 0.5rem;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    right: 0;
+    margin: 0 auto;
+    max-width: 60%;
+    text-align: center;
+}
+
+.logo15 img {
+    width: 100%
+}
+
+.fondo #fondo_1 {
+    display: none;
+}
+
+@media(min-width:320px) and (max-width:375px) {
+    .principal .logo_xanic {
+        position: absolute;
+        left: 0;
+        top: 3.0%;
+    }
+    .botellita {
+        position: absolute;
+        top: 34%;
+        left: 18%;
+        max-width: 54%;
+    }
+    .principal .logo15 {
+        max-width: 45%;
+        right: 5%;
+    }
+}
+
+@media(min-width:580px) {
+    .fondo #fondo_1 {
+        display: inline;
+    }
+    .fondo #fondo_2 {
+        display: none;
+    }
+    .botellita {
+        position: absolute;
+        top: 5%;
+        left: -15%;
+        z-index: -10;
+        max-width: 80%;
+    }
+    .botellita img {
+        width: 100%;
+    }
+    .principal .logo15 {
+        position: absolute;
+        left: 33%;
+        top: 35%;
+        right: 0;
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: center;
+    }
+    .logo15 img {
+        width: 100%
+    }
+}
+
+@media(min-width:750px) {
+    .principal .logo_xanic {
+        max-width: 180px;
+    }
+    .principal .opcion_si_no {
+        max-width: 300px;
+    }
+    .botellita {
+        top: 5%;
+        left: -15%;
+        max-width: 80%;
+    }
+    .principal .logo15 {
+        left: 33%;
+        top: 30%;
+        right: 0;
+        max-width: 50%;
+    }
+}
+
+@media(min-width:950px) {
+    .principal .logo_xanic {
+        top: 3.5%;
+        max-width: 200px;
+    }
+    .principal .opcion_si_no {
+        max-width: 320px;
+    }
+    .botellita {
+        top: 10%;
+        left: -2%;
+        max-width: 55%;
+    }
+    .principal .logo15 {
+        left: 29%;
+        top: 23%;
+        right: 0;
+        max-width: 50%;
+    }
+}
+
+@media(min-width:950px) and (min-height:650px) and (max-height:790px) {
+    .botellita {
+        top: 1%;
+        left: 10%;
+        max-width: 40%;
+    }
+    .principal .logo15 {
+        left: 29%;
+        top: 15%;
+        right: 0;
+        max-width: 45%;
+    }
+}
+
+@media(min-width:1100px) {
+    .principal .logo_xanic {
+        top: 4%;
+        max-width: 230px;
+    }
+    .principal .opcion_si_no {
+        max-width: 350px;
+    }
+    .botellita {
+        top: 0%;
+        left: -5%;
+        max-width: 80%;
+    }
+    .principal .logo15 {
+        top: 13%;
+    }
+}
+
+@media(min-width:1200px) and (min-height:710px) and (max-height:850px) {
+    .botellita {
+        top: 0%;
+        left: 10%;
+        max-width: 39%;
+    }
+    .principal .logo15 {
+        left: 29%;
+        top: 15%;
+        right: 0;
+        max-width: 40%;
+    }
+}
+
+@media(min-width:1300px) {
+    .botellita {
+        top: 4%;
+        left: 3%;
+        max-width: 50%;
+    }
+    .principal .logo15 {
+        top: 18%;
+        max-width: 45%;
+    }
+}
+
+@media(min-width:1300px) and (min-height:600px) and (max-height:699px) {
+    .botellita {
+        top: 2%;
+        left: 10%;
+        max-width: 30%;
+    }
+    .principal .logo15 {
+        left: 29%;
+        top: 12%;
+        right: 0;
+        max-width: 36%;
+    }
+}
+
+@media(min-width:1300px) and (min-height:700px) and (max-height:850px) {
+    .botellita {
+        top: 2%;
+        left: 10%;
+        max-width: 38%;
+    }
+    .principal .logo15 {
+        left: 29%;
+        top: 15%;
+        right: 0;
+        max-width: 40%;
+    }
+}
+
+@media(min-width:1400px) {
+    .principal .logo_xanic {
+        top: 4.0%;
+        max-width: 280px;
+    }
+    .principal .opcion_si_no {
+        max-width: 430px;
+    }
+    .si_no_botones img {
+        margin: 0 1rem;
+    }
+    .botellita {
+        top: 0%;
+        left: 10%;
+        max-width: 38%;
+    }
+    .principal .logo15 {
+        top: 15%;
+        max-width: 40%;
+    }
+}
+
+@media(min-width:1600px) {
+    .botellita {
+        top: 0%;
+        left: 13%;
+        max-width: 35%;
+    }
+    .principal .logo15 {
+        top: 13%;
+        max-width: 34%;
+    }
+}
+
+@media(min-width:2000px) {
+    .principal .logo_xanic {
+        top: 4.0%;
+        max-width: 450px;
+    }
+    .principal .opcion_si_no {
+        max-width: 715px;
+    }
+    .si_no_botones img {
+        margin: 0 2rem;
+    }
+    .botellita {
+        top: 0%;
+        left: 2%;
+        max-width: 100%;
+    }
+    .botellita img {
+        min-width: 950px;
+    }
+    .principal .logo15 {
+        top: 15%;
+        max-width: 45%;
+    }
+}
+
+@media(min-width:2500px) {
+    .botellita {
+        top: 2%;
+        left: 7%;
+        max-width: 100%;
+    }
+    .botellita img {
+        min-width: 1150px;
+    }
+    .principal .logo15 {
+        top: 17%;
+        max-width: 40%;
+    }
+}

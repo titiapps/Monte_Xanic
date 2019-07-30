@@ -1,0 +1,472 @@
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir-Roman2.ttf");
+}
+
+body {
+    background-image: url("./img/pagina2/fondo_botella_fondo_negro.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% 50%;
+    font-family: "Avenir";
+
+}
+
+.boton_arriba {
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+
+.boton_abajo {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+.boton_arriba img, .boton_abajo img {
+    height: 40px;
+    width: 40px;
+}
+
+.principal {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media(min-width:100px) and (max-width:579px) {
+  .boton_nav i {
+      font-size: 2rem !important;
+  }
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        background-image: none;
+    }
+    .principal_movil {
+        margin: auto 0;
+        padding-top: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    #elemento1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento1 .texto {
+        width: 70%;
+    }
+    #elemento1 .texto img {
+        width: 100%;
+    }
+    #elemento1 .categoria {
+        text-align: center;
+        width: 45%;
+    }
+    #elemento1 .categoria img {
+        width: 100%;
+    }
+    #elemento1 .botella {
+        width: 19%;
+        padding-bottom: 2rem;
+    }
+    #elemento1 .botella img {
+        width: 100%;
+    }
+    /* elemento 2 crianza */
+    #elemento2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento2 .texto {
+      
+        width: 80%;
+    }
+    #elemento2 .texto img {
+        width: 100%;
+    }
+    #elemento2 .categoria {
+        text-align: center;
+        width: 40%;
+    }
+    #elemento2 .categoria img {
+        width: 100%;
+    }
+    #elemento2 .botella {
+        width: 20%;
+        padding-bottom: 2rem;
+    }
+    #elemento2 .botella img {
+        width: 100%;
+    }
+    /* elemento 3 notas de cata */
+    #elemento3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento3 .texto {
+        width: 90%;
+        margin-right: 1rem;
+    }
+    #elemento3 .texto img {
+        width: 100%;
+    }
+    #elemento3 .categoria {
+        padding-top: 0rem;
+        text-align: center;
+        width: 60%;
+    }
+    #elemento3 .categoria img {
+        width: 100%;
+    }
+    #elemento3 .botella {
+        width: 16%;
+        padding-bottom: 2rem;
+    }
+    #elemento3 .botella img {
+        width: 100%;
+    }
+    /* elemento 4 recomendaciones gastronomicas */
+    #elemento4 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
+    #elemento4 .texto {
+        width: 97%;
+    }
+    #elemento4 .texto img {
+        width: 100%;
+    }
+    #elemento4 .categoria {
+        text-align: center;
+        width: 60%;
+    }
+    #elemento4 .categoria img {
+        width: 100%;
+    }
+    #elemento4 .botella {
+        width: 18%;
+        padding-bottom: 2rem;
+    }
+    #elemento4 .botella img {
+        width: 100%;
+    }
+    /* elemento 5 firma distintiva */
+    #elemento5 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #elemento5 .texto {
+        width: 85%;
+    }
+    #elemento5 .texto img {
+        width: 100%;
+    }
+    #elemento5 .categoria {
+        text-align: center;
+        width: 65%;
+    }
+    #elemento5 .categoria img {
+        width: 100%;
+    }
+    #elemento5 .botella {
+        width: 18%;
+        padding-bottom: 2rem;
+    }
+    #elemento5 .botella img {
+        width: 100%;
+    }
+    .botella_cat_btn_derecha {
+        position: fixed;
+        bottom: 0px;
+        left: 48%;
+    }
+    .botella_cat_btn_izquierda {
+        position: fixed;
+        top: 5px;
+        left: 48%;
+        z-index: 22;
+    }
+    .botella_cat_btn_derecha img, .botella_cat_btn_izquierda img {
+        width: 20px;
+    }
+    .principal, .logo_xanic, .logo_xanic_2, .navegacion, .boton_arriba, .boton_abajo {
+        display: none;
+    }
+}
+
+@media(min-width:580px) {
+    .principal_movil {
+        display: none;
+    }
+}
+
+#elemento2, #elemento3, #elemento4, #elemento5 {
+    display: none;
+}
+
+.logo_xanic {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    flex: 0 1 calc(33% - 1rem);
+}
+
+.logo_xanic img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo_xanic_2 {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 1.5%;
+    min-width: 10%;
+}
+
+.logo_xanic_2 img {
+    width: 90px;
+    height: 90px;
+}
+
+.contenido_gran_ricardo {
+    min-height: 60vh;
+    max-height: 60vh;
+    flex: 0 1 calc(18% - 1rem);
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido_gran_ricardo .categorias {
+    padding-left: 1rem;
+}
+
+.contenido_gran_ricardo .parte1 .imagen_15anos {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.categorias .imagen_categoria img {
+    width: 65%;
+}
+
+.parte2 {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    flex: 0 1 calc(30% - 1rem);
+    min-height: 40vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.parte2 .imagen_detalle {
+    flex: 1;
+    max-width: 100%;
+}
+
+.parte2 .imagen_detalle img {
+    max-width: 400px;
+}
+
+#imagen_detalle1, #imagen_detalle2, #imagen_detalle3, #imagen_detalle4, #imagen_detalle5 {
+    display: none;
+}
+
+@media(min-width:950px) and (min-height:650px) {
+    .contenido_gran_ricardo {
+        padding-top: 10rem;
+    }
+    .categorias .imagen_categoria img {
+        width: 80%;
+    }
+    .logo_xanic {
+        flex: 0 1 calc(43% - 1rem);
+    }
+    .parte2 {
+        padding-top: 4rem;
+    }
+    .parte2 .imagen_detalle img {
+        max-width: 280px;
+    }
+}
+
+@media(min-width:1000px) and (min-height:765px) {
+    .contenido_gran_ricardo {
+        padding-top: 12rem;
+    }
+    .categorias .imagen_categoria img {
+        width: 85%;
+    }
+    .logo_xanic {
+        flex: 0 1 calc(42% - 1rem);
+    }
+    .parte2 {
+        padding-top: 4rem;
+    }
+    .parte2 .imagen_detalle img {
+        max-width: 300px;
+    }
+}
+@media(min-width:1300px) and (min-height:765px) {
+    .contenido_gran_ricardo {
+        padding-top: 12rem;
+    }
+    .categorias .imagen_categoria img {
+        width: 65%;
+    }
+    .logo_xanic {
+        flex: 0 1 calc(43% - 1rem);
+    }
+    .parte2 {
+        padding-top: 4rem;
+    }
+    .parte2 .imagen_detalle img {
+        max-width: 350px;
+    }
+}
+
+
+@media(min-width:1000px) and (min-height:850px) {
+    .contenido_gran_ricardo {
+        padding-top: 10rem;
+    }
+    .categorias .imagen_categoria img {
+        width: 80%;
+    }
+    .logo_xanic {
+        flex: 0 1 calc(45% - 1rem);
+    }
+}
+
+@media(min-width:1300px) and (min-height:1000px) {
+    .contenido_gran_ricardo {
+        padding-top: 16rem;
+    }
+    .parte2 {
+        padding-top: 2rem;
+    }
+    .parte2 .imagen_detalle img {
+        max-width: 380px;
+        min-width: 380px;
+    }
+}
+
+@media(min-width:1300px) {}
+
+@media(min-width:1600px) {
+    .parte2 {
+        padding-top: 10rem;
+    }
+}
+
+@media(min-width:1800px) {
+    .contenido_gran_ricardo {
+        padding-top: 10rem;
+    }
+    .categorias .imagen_categoria img {
+        width: 80%;
+    }
+    .logo_xanic {
+        flex: 0 1 calc(45% - 1rem);
+    }
+    .parte2 .imagen_detalle img {
+        max-width: 550px;
+        min-width: 550px;
+    }
+}
+
+.categorias div img:hover {
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.0);
+    padding: 0;
+}
+
+/* NAVEGACION */
+
+.navegacion {
+    position: fixed;
+    right: 0;
+    top: 44%;
+}
+
+.navegacion img {
+    display: block;
+    width: 170px;
+    height: 25px;
+    z-index: 3;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.principal_nav {
+    margin-top: 3px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    z-index: 3;
+}
+
+#nav_gran_ricardo2, #nav_galeria_videos, #nav_premios, #nav_acerca, #nav_monte_xanic_gr, .pagina_actual img:first-child {
+    display: none;
+}
+
+.animate-in {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
